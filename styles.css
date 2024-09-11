@@ -1,0 +1,167 @@
+/* Colours */
+:root {
+  --green: #2ecc71;
+  --red: #e74c3c;
+  --blue: #3498db;
+  --yellow: #f1c40f;
+  --purple: #8e44ad;
+  --turquoise: #1abc9c;
+  --light-gray: #f4f4f4;
+  --dark-gray: #333;
+}
+
+/* Reset and Layout Styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #2c3e50; /* Fallback background color */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-image: url('https://motionbgs.com/media/4464/fade-valorant.jpg'); /* URL for background image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+}
+
+h1 {
+  color: var(--yellow);
+  font-size: 4rem;
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 1; /* Ensure text is above other content */
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+p {
+  color: var(--yellow);
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  z-index: 1; /* Ensure text is above other content */
+}
+
+/* Search Bar Styles */
+#searchForm {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px; /* Space between the search bar and buttons */
+  padding: 0 10px; /* Padding to handle edge cases on small screens */
+  box-sizing: border-box;
+}
+
+#searchForm input[type="text"] {
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 600px; /* Limit width of the search bar */
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  background-color: var(--light-gray); /* Light background color */
+}
+
+#searchForm button {
+  background-color: var(--blue);
+  border: none;
+  border-radius: 30px; /* Match the border radius of the input */
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+#searchForm button:hover {
+  background-color: darken(var(--blue), 10%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Basic Button Style */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 5px solid var(--red);
+  border-radius: 0.6em;
+  color: var(--red);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+  margin: 25px;
+  padding: 1.1em 4.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  z-index: 1; /* Ensure buttons are above other content */
+}
+
+.btn:hover,
+.btn:focus {
+  color: #f54242;
+  outline: 0;
+}
+
+/* Specific Button Styles */
+.third {
+  border-color: var(--turquoise);
+  color: #fff;
+  box-shadow: 0 0 1000px 1000px var(--turquoise) inset, 0 0 0 0 var(--turquoise);
+  transition: all 150ms ease-in-out;
+  margin: 0 auto;
+}
+
+.third:hover {
+  box-shadow: 0 0 20px 0 var(--turquoise) inset, 0 0 100px 3px var(--turquoise);
+}
+
+.nd {
+  border-color: var(--blue);
+  color: #fff;
+  box-shadow: 0 0 1000px 1000px var(--blue) inset, 0 0 0 0 var(--blue);
+  transition: all 150ms ease-in-out;
+  margin: 0 auto;
+}
+
+.nd:hover {
+  box-shadow: 0 0 20px 0 var(--blue) inset, 0 0 100px 3px var(--blue);
+}
+
+.st {
+  border-color: var(--purple);
+  color: #fff;
+  box-shadow: 0 0 1000px 1000px var(--purple) inset, 0 0 0 0 var(--purple);
+  transition: all 150ms ease-in-out;
+  margin: 0 auto;
+}
+
+.st:hover {
+  box-shadow: 0 0 20px 0 var(--purple) inset, 0 0 100px 3px var(--purple);
+}
